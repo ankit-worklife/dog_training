@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <style>
+
+        body, h1, h2, h3, h4, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        #main-container {
+            width: 1440px;
+            margin: 0 240px 0 240px;
+        }
+
+        .hprof {
+            display: block !important;
+        }
+
+        #logo-box {
+            margin: 10px 20px;
+        }
+        
+        #tab-bar {  
+            float: right;
+            margin: 10px 20px;
+        }
+
+        #nav-tab {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            margin-left: 5px;
+            color: white;
+        }
+
+        #nav-button {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            margin-left: 10px;
+            background-color: #E3D26F;            
+            color: black;
+            border: none;
+            padding: 10px;
+        }
+
+        .circular-shape {
+            position: absolute  ;
+            left: 330px;
+            right: 35.21%;
+            top: 200px;
+            bottom: -18.89%;
+            z-index: 1;
+            width: 820px;
+            height: 720px;
+
+
+        }
+
+        .dog-img {
+            position: absolute  ;
+            left: 470px;
+            right: 35.21%;
+            top: 240px;
+            bottom: -18.89%;
+            z-index: 3;
+            width: 600px;
+            height: 675px;
+        }
+        
+        .hero-heading h1 {
+            font-family: "Big Shoulders", sans-serif;
+            font-style: normal;
+            color: white;
+            text-align: left;
+            font-size: 200px;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            line-height: 170px;
+        }
+
+        .hero-heading {            
+            margin: 30px auto auto 32px;
+        }
+
+        .hdog {
+            margin: 0 300px auto 75px;
+        }
+
+        .hero-heading > .location {
+            position: relative;
+            top: 160px;
+            right: 200px;
+            text-align: right;
+            font-family: "Big Shoulders", sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            color: white;
+            line-height: 40px;
+        }
+
+        #sub-heading-box {
+            background-color: #BDDCF0;
+            width: 1440px;
+            height: 312px;
+            margin: 0;
+            position: relative;
+            z-index: 3;
+        }
+
+
+
+        #sub-heading {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+            text-align: center;
+            padding: 80px 459px 0px 460px;
+            font-size: 28px;
+            height: 38px;
+            width: 521px;
+        }
+
+        .points-box {
+            margin-left: 40px;
+        }
+
+        .points-box > div {
+            display: inline-block;
+            margin: 35px;
+        }
+
+        #sub-heading-box p {
+            margin-bottom: 30px;
+        }
+
+        #how-we-can-help {
+            position: relative;
+            background-color: #FFF8EE;
+            width: 1440px;
+            height: 700px;
+            margin: 0;
+        }
+
+         #how-we-can-help h1 {
+            font-family: "Big Shoulders", sans-serif;
+            font-size: 55px;            
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 30px;
+         }
+
+         .paw-1 {
+            position: absolute;
+            top: -20px;
+            left: 10px;
+         }
+
+         .paw-2 {            
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            transform: rotate(180deg);
+         }
+        .training-box {
+            text-align: center;
+        }
+
+        .training-card {
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            border-radius: 1%;
+            width: 660px;
+            height: 214px;
+            margin: 10px;
+        }
+
+        .training-img {
+            position: relative;
+            background-color: #BDDCF0;
+            height: 170px;
+            width: 170px;
+            border-radius: 5%;
+            margin: 20px;
+        }
+
+        .training-card img {
+            float: left;
+            height: 133px;
+            width: 133px;
+            margin: 20px;
+        }
+
+        .training-content {
+            position: absolute;
+            top: 20px;
+            left: 210px;
+            width: 423px;
+            height: 170px;
+        }
+
+        .training-content h4 {
+            text-align: left;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .training-content p {
+            text-align: left;
+        }
+
+        /* about us */
+
+        .about-us-container {
+            position: relative;
+        }
+
+        .about-us-container img {
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            width: 665px;
+            height: 480px;
+        }   
+
+        .about-us {
+            width: 580px;
+            height: 420px;
+            position: absolute;
+            left: 820px;
+            top: 90px;
+            text-align: left;
+        }
+
+        .about-us > h1 {
+            text-transform: uppercase;
+            font-size: 55px;
+            font-family: "Big Shoulders", sans-serif;
+        }
+
+        .about-us .para-1 {
+            font-size: 28px;
+            font-family: "manrope";
+            font-weight: 300;
+        }  
+
+        .about-us .para-2 {
+            font-size: 18px;
+            font-family: "manrope";
+            font-weight: 200;
+            margin-top: 10px;
+        }  
+
+        .about-us button {
+            background-color: #1E4C8A;
+            border: none;
+            color: white;
+            width: 200px;
+            height: 40px;
+            margin-top: 15px;
+            font-family: "manrope";
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Reviews and Blog */
+
+        .blog-container {
+            width: 1440px;
+            height: 1495px;
+            padding-bottom: 80px;
+            background-color: #FFF8EE;
+        }
+
+        .blog-container h1 {
+            text-transform: uppercase;
+            font-size: 55px;
+            font-family: "Big Shoulders", sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .blog-container h4 {
+            text-transform: capitalize;
+            font-family: "manrope";
+            font-weight:normal;            
+            font-size: 28px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .testimonials {
+            position: relative;
+            margin: 50px 40px;
+            height: 350px;
+        }
+
+        .card {
+            width: 435px;
+            height: 350px;
+            background-color: white;
+            border-radius: 2%;
+        }
+
+        .testimonials img {
+            display: block;
+            width: 20%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .card p {
+            margin: 30px 20px;
+            text-align: center;
+            font-family: "manrope";
+            font-weight: normal;
+        }
+
+        .card-1 {
+            position: absolute;
+        }
+
+        .card-2 {
+            position: absolute;
+            left: 455px;
+        }
+
+        .card-3 {            
+            position: absolute;
+            left: 910px;
+        }
+
+        /* Blog Section */
+
+        .blog-cards {
+            position: relative;
+            margin: 30px 40px;
+            width: 1361px;
+            height: 654px;
+        }
+
+
+
+        .blog-cards > div {
+            position: absolute;
+            width: 434px;
+            height: 660px;
+        }
+        
+        .blogcard-2 {
+            left: 454px;
+        }
+
+        .blogcard-3 {
+            left: 908px;
+        }
+
+
+        .blog-cards > div > p {
+            text-align: center;
+            margin: 20px 10px;
+            font-weight: normal;
+
+        }
+
+        .blog-cards > div > a {
+            display: flex;
+            justify-content: center;
+            font-family: "manrope" ;
+            font-size: 17px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* gallary */
+
+        .gallary {
+            width: 100%;
+        }
+
+        .gallary > img {
+            float: left;
+        }
+
+        /* footer */
+
+        footer {
+            clear: both;
+            position: relative;
+            background-color: #1E4C8A;
+            color: white;
+            width: 1440px; 
+            height: 430px;
+        }
+
+        footer > div {
+            position: absolute;
+            top: 20%;
+        }
+
+        footer h2, p {            
+            font-family: "manrope";
+            font-weight: 100;
+        }
+
+        footer h2 {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .coloumn-1 {
+            left: 5%;
+            right: 70%;
+        }
+
+        .coloumn-2{
+            left: 40%;
+            right: 40%;
+        }
+
+        .coloumn-2 img{
+            width: 100%;
+            height: 60px;
+
+        }
+
+        .coloumn-2 button {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            margin-top: 20px;
+            margin-left: 30px;
+            background-color: #E3D26F;            
+            color: black;
+            border: none;
+            padding: 10px;
+            width: 80%;
+            height: 40px;
+        }
+
+        .coloumn-3 {
+            left: 80%;
+            right: 5%;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body  style="margin: 0;">
+
+    <div id="main-container">
+
+
+        <div style="background-color: #1E4C8A; width: 1440px; height: 830px;">
+            <div>
+                <img  src="D:\Code Playground\Code Testing\resources\Image\Logo.png" alt="Logo" id="logo-box">
+                    <span id="tab-bar">
+                    <Span id="nav-tab">Home</Span>
+                    <Span id="nav-tab">Meet the Team</Span>
+                    <Span id="nav-tab">Services</Span>
+                    <Span id="nav-tab">Contact</Span>
+                    <button id="nav-button">Book a Class Today!</button>
+                </span>
+            </div>
+            
+            <div class="hero-heading">
+                <img class="circular-shape" src="./resources/Image/Circular Shape.png" alt="Circular Shape" >
+                <img class="dog-img" src="./resources/Image/Main hero image dog.png" alt="Dog Image">
+                <h1 class="hprof">Professional</h1>
+
+                <div class="dog-training">
+                    <h1 class="hdog">Dog</h1>
+                    <h1 class="htraining">Training</h1>
+                </div>
+
+                <div class="location">
+                    <p>in Sioux Falls, South Dakota</p>
+                    <button id="nav-button">Book a Class Today!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub-heading-box">
+            <span>
+                <h3 id="sub-heading">We work with all dog breeds to eliminate:</h3>
+            </span>
+            <span class="points-box">
+                <div>
+                    <p>✔️Eating and unwanted items</p>
+                    <p>✔️Any other behavioral concerns</p>
+                </div>
+                <div>
+                    <p>✔️Destruction behaviour and digging</p>
+                    <p>✔️Commands (come, stay sit, etc.)</p>
+                </div>
+                <div>
+                    <p>✔️Food guarding and begging</p>
+                    <p>✔️Anxiety, agressing & rough play</p>
+                </div>
+                <div>
+                    <p>✔️Leash and potty trained</p>
+                    <p>✔️Howling, barking, yelping, whining</p>
+                </div>
+            </span>
+        </div>
+    
+        <div id="how-we-can-help">
+            <div>
+                <h1>How we can help</h1>
+            </div>
+            <div class="training-box">
+
+                <img class="paw-1" src="./resources/Image/paw-grp.png" alt="">
+                <img class="paw-2" src="./resources/Image/paw-grp.png" alt="">
+
+                <div class="dogt training-card">
+
+                    <div class="training-img">
+                        <img src="./resources/Image/dog-training.png" alt="Dog Image">
+                    </div>
+
+                    <div class="training-content">
+                        <h4>Dog Training</h4>
+                        <p>Designed to provide your puppy the essential skills and behaviors, ensuring a smooth transition into a well-behaved and happy adult dog. </p>
+                    </div>
+                </div>
+
+                <div class="inhome training-card">
+
+                    <div class="training-img">
+                        <img src="./resources/Image/home-training.png" alt="Home Training">
+                    </div>
+                    <div class="training-content">
+                        <h4>In Home Training</h4>
+                        <p>Designed to provide your puppy the essential skills and behaviors, ensuring a smooth transition into a well-behaved and happy adult dog. </p>
+                    </div>
+                </div>
+
+                <div class="obedience training-card">
+
+                    <div class="training-img">
+                        <img src="./resources/Image/obedience-training.png" alt="Obedience Training">
+                    </div>
+
+                    <div class="training-content">
+                        <h4>Obedience Training</h4>
+                        <p>Designed to provide your puppy the essential skills and behaviors, ensuring a smooth transition into a well-behaved and happy adult dog. </p>
+                    </div>
+                </div>
+
+                <div class="private training-card">
+
+                    <div class="training-img">
+                        <img src="./resources/Image/private-training.png" alt="Private Training">
+                    </div>
+
+                    <div class="training-content">
+                        <h4>Private Training</h4>
+                        <p>Designed to provide your puppy the essential skills and behaviors, ensuring a smooth transition into a well-behaved and happy adult dog. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-container" style=" background-color: #E3D26F; width: 1440px; height: 680px;">
+            <img src="./resources/Image/about.png" alt="">
+            <div class="about-us">
+                <h1>About Us</h1>
+                <p class="para-1">With over a decade of dedicated service, we have become a trusted name</p>
+                <p class="para-2">At A1 Dixie, our passion is dogs. Our team of seven certified dog trainers posses deep expertise in addressing a wde range fo behavioral issues. We believe in inclusivity, welcoming all breeds and challenges. <br> <br>Our mission is simple, to create harmony between dogs and their human companions through effective, compassionate, and personalized training solutions.  Celebrating a decade in business, we’re motivated by the countless success stories we’ve witnesses. Whether you have a mischievous puppy, a rescue with a troubled past, or just want to strengthen your bond. A1 Dixie is here to guide you. Contact us today to begin your journey to a happier, well-trained dog. </p>
+                <button class="about-button">Book a Class Today!</button>
+            </div>
+        </div>
+        
+        <div class="blog-container">
+
+            <div>
+                <h1>the reviews are in</h1>
+                <h4>Trusted by hundreds of dog owners</h4>
+            </div>
+
+            <div class="testimonials">
+                
+            <div class="card card-1">
+                    <img src="./resources/Image/Sarah's Image.png" alt="Sarah image">
+                    <p>“I can’t thank you enough for transforming my unruly puppy, Max, into a well-behaved companion. The in-home training was a game-changer, and the patience and expertise of the trainers made all the difference. Max now follows commands with enthusiasm.”<br><br><strong>Sarah</strong></p>
+                </div>
+                <div class="card card-2">
+                    <img src="./resources/Image/Jason's Image.png" alt="jason image">
+                    <p>“I was at my wit’s end with my aggressive rescue dog until I found A1 Dixie. Their private training sessions worked wonders.  My dog’s behavior has done a complete 180, and I couldn’t be happier. They truly understand dogs, and it shows in the results.” <br><br><strong>Jason</strong></p>
+                </div>
+
+                <div class="card card-3">
+                    <img src="./resources/Image/Rachelle's Image.png" alt="Rachelle image">
+                    <p>“My experience with A1 Dixie was fantastic from start to finish. Their puppy training program provided the perfect foundation for my little fur-ball, Luna. She’s now a well-mannered, happy pop, and I credit it all to their expert guidance and support. Highly recommend A1 Dixie! <br> <br><strong>Rachelle</strong></p>
+                </div>
+            </div>
+
+            <h1>On the Blog</h1>
+
+            <div class="blog-cards">
+
+                <div class="blogcard-1">
+                    <img src="./resources/Image/Blog-Article-1.png" alt="article #1">
+                    <h4>Top 5 training exercises for puppies</h4>
+                    <p>Great news, you can start training your puppy as soon as you get them. We recommend these 5 different exercises to start with.</p>
+                    <a href="#">Read More</a>
+                </div>
+                 <div class="blogcard-2">
+                    <img src="./resources/Image/Blog-Article-2.png" alt="article #1">
+                    <h4>How to get your dog to stop jumping on people</h4>
+                    <p>If you are sick and tired of your dog jumping on everyone they see and have tried everything, then this guide is for...</p>
+                    <a href="#">Read More</a>
+                </div>
+                 <div class="blogcard-3">
+                    <img src="./resources/Image/Blog-Article-3.png" alt="article #1">
+                    <h4>How to train a dog that won’t listen</h4>
+                    <p>There is nothing more frustrating than trying to train a dog that will not listen, no matter the treats or commands you give them.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>  
+
+        <div class="gallary">
+            <img src="./resources/Image/Social Media Graphic 1.png" alt="">
+            <img src="./resources/Image/Social Media Graphic 2.png" alt="">
+            <img src="./resources/Image/Social Media Graphic 3.png" alt="">
+            <img src="./resources/Image/Social Media Graphic 4.png" alt="">
+        </div>   
+        
+        <footer>
+            <div class="coloumn-1">
+                <div>
+                    <h2>Contact</h2>
+                    <br>
+                    <p>4060 S Grange Ave<br>Sioux Falls, South Dakota 57105</p>
+                    <br>
+                    <p>605-364-9598 <br> info@a1dixietraining.com</p>
+                </div>
+                <div style="margin: 10px;">
+                    <a href="#"><img src="./resources/Image/Facebook icon.png" alt=""></a>
+                    <a href="#"><img src="./resources/Image/Email icon.png" alt=""></a>
+                    <a href="#"><img src="./resources/Image/Instagram icon.png" alt=""></a>
+                </div>
+            </div>
+                
+
+            <div class="coloumn-2">
+                <img src="./resources/Image/Logo.png" alt="footer-logo">
+                <button>Book a Class Today!</button>
+            </div>
+
+            <div class="coloumn-3">
+                <h2>Hours</h2>
+                <br>
+                <p>Monday: 8:00am-5:00pm <br> Tuesday: 8:00am-5:00pm <br> Wednesday: 8:00am-5:00pm <br> Thursday: 8:00am-5:00pm <br> Friday: 8:00am-3:00pm <br> Saturday: Closed <br> Sunday: Closed</p>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>
